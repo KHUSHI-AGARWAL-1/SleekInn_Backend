@@ -4,7 +4,7 @@ const verifyToken = (req, res, next) => {
     console.log(req.cookies);
     console.log('tushar');
     
-    // console.log(req.headers.authorization);
+    console.log(req.headers.authorization);
     console.log("cookies");
     const token = req.cookies.token || req.headers.authorization.split(" ")[1];
     console.log(token + " toekn");
